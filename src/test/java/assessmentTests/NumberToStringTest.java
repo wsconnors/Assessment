@@ -1,12 +1,11 @@
-package jpMorganTests;
+package assessmentTests;
 
-import jpMorgan.JPMorganAssessment;
+import assessment.NumberToString;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class JPMorganAssessmentTest {
-
-    JPMorganAssessment test = new JPMorganAssessment();
+public class NumberToStringTest {
+    NumberToString test = new NumberToString();
 
     @Test
     public void test1(){
@@ -28,8 +27,8 @@ public class JPMorganAssessmentTest {
     }
     @Test
     public void test4(){
-        String expected = "NineThousandNineHundredNinetyNine";
-        String actual = test.convertNumber(9999);
+        String expected = "OneThousandNineHundredNinetyNine";
+        String actual = test.convertNumber(1999);
         Assert.assertEquals(expected,actual);
     }
     @Test

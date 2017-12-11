@@ -1,7 +1,6 @@
-package jpMorgan;
+package assessment;
 
-public class JPMorganAssessment {
-
+public class NumberToString {
     public String convertNumber(int number){
         if (number < 20){
             return getDigit(number);
